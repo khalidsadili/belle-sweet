@@ -117,9 +117,10 @@
 
     /* Adding a nice backdrop */
     /* Adding a nice backdrop */
+    /* Adding a nice backdrop */
     /* padding: 20px; - Removed to fix white edges */
     /* background: white; - Removed to fix white edges */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); - Removed as per user request to remove edges */
 }
 
 @keyframes float {
