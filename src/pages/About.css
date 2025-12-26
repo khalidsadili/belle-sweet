@@ -54,16 +54,17 @@
     transform: none;
     display: inline-block;
     margin-bottom: var(--spacing-md);
+    color: white;
+    /* Force white text */
 }
 
-.about-text h1::after {
-    margin: 10px 0 0;
-}
+/* ... */
 
 .story-text {
     font-size: 1.2rem;
     line-height: 2;
-    color: var(--color-text);
+    color: white;
+    /* Force white text */
     text-align: justify;
 }
 
