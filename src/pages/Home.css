@@ -107,9 +107,18 @@
 }
 
 .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--spacing-md);
+}
+
+/* Ensure cards don't get too wide in flex view */
+.product-card {
+    flex: 0 1 300px;
+    /* Grow 0, Shrink 1, Basis 300px */
+    max-width: 350px;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
