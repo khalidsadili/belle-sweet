@@ -83,9 +83,10 @@
     animation: float 6s ease-in-out infinite;
 
     /* Adding a nice backdrop */
-    padding: 20px;
-    background: white;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    /* Adding a nice backdrop */
+    /* padding: 20px; - Removed to fix white edges */
+    /* background: white; - Removed to fix white edges */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes float {
