@@ -83,7 +83,17 @@
     font-size: 1.1rem;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(224, 94, 136, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s, color 0.3s;
+    margin-right: 20px;
+    /* Move slightly left (RTL) */
+}
+
+[data-theme="dark"] .cta-button {
+    background-color: var(--color-primary-light);
+    /* Dark Coffee */
+    color: var(--color-secondary);
+    /* Gold Text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button:hover {
