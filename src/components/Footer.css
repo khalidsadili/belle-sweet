@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--color-primary-light);
+    padding: var(--spacing-md) 0;
+    margin-top: auto;
+    /* Push to bottom if flex container */
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-content p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: var(--spacing-sm);
+}
