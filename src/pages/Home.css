@@ -106,7 +106,7 @@
     padding: var(--spacing-lg) var(--spacing-sm);
 }
 
-.products-grid {
+.featured-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

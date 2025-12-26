@@ -10,7 +10,8 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-lg);
-    background-color: white;
+    background-color: var(--color-surface);
+    /* Fix dark mode */
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);

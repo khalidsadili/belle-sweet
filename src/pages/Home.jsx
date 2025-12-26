@@ -27,7 +27,7 @@ const Home = () => {
 
             <section className="featured-section container">
                 <h2 className="section-title">الاصناف المميزه</h2>
-                <div className="products-grid">
+                <div className="featured-grid">
                     {featuredProducts.map(product => (
                         <ProductCard key={product.id} product={product} />
                     ))}
