@@ -1,13 +1,16 @@
 :root {
-  /* Belle Theme Colors */
-  --color-primary: #e05e88; /* Vibrant Pink from logo */
-  --color-primary-light: #ffdbe6; /* detailed soft pink */
-  --color-secondary: #d4af37; /* Gold */
-  --color-background: #fffafc; /* Very light pink background */
+  /* Belle Theme Colors - Light */
+  --color-primary: #e05e88;
+  /* Vibrant Pink */
+  --color-primary-light: #ffdbe6;
+  --color-secondary: #d4af37;
+  /* Gold */
+  --color-background: #fffafc;
+  /* Very light pink background */
   --color-surface: #ffffff;
   --color-text: #4a4a4a;
   --color-text-light: #888888;
-  
+
   /* Fonts */
   --font-heading: 'Amiri', serif;
   --font-body: 'Tajawal', sans-serif;
@@ -17,10 +20,37 @@
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
-  
+
   /* Borders */
   --border-radius: 12px;
   --border-radius-lg: 20px;
+}
+
+[data-theme="dark"] {
+  /* Belle Theme Colors - Dark (Dark Chocolate & Berry) */
+  --color-primary: #ff85a9;
+  /* Lighter Pink for contrast */
+  --color-primary-light: #4a2c36;
+  /* Darker Pink/Brown background for elements */
+  --color-secondary: #ebd27b;
+  /* Lighter Gold */
+  --color-background: #1a0f12;
+  /* Deep Dark Chocolate */
+  --color-surface: #2c1a1f;
+  /* Slightly lighter chocolate */
+  --color-text: #f5f0f1;
+  /* Creamy White */
+  --color-text-light: #c2b0b4;
+  /* Muted Rose/Grey */
+}
+
+/* Smooth transition for theme change */
+body,
+.navbar,
+.product-card,
+.footer,
+.about-content {
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
 
 * {
@@ -38,7 +68,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--color-primary);
   margin-bottom: var(--spacing-sm);
