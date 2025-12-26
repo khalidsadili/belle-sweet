@@ -10,11 +10,38 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-lg);
-    background-color: var(--color-surface);
-    /* Fix dark mode */
+    position: relative;
+    overflow: hidden;
+    /* Contain the blurred pseudo-element */
+    isolation: isolate;
+    /* Create new stacking context */
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle border */
+}
+
+/* Blurry Background Image */
+.about-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/section-bg.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.4);
+    /* Blur and darken for readability */
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+[data-theme="dark"] .about-content::before {
+    filter: blur(8px) brightness(0.3);
+    /* Darker in dark mode */
 }
 
 .about-text {
