@@ -1,15 +1,17 @@
 :root {
-  /* Belle Theme Colors - Light */
-  --color-primary: #e05e88;
-  /* Vibrant Pink */
-  --color-primary-light: #ffdbe6;
-  --color-secondary: #d4af37;
-  /* Gold */
-  --color-background: #fffafc;
-  /* Very light pink background */
+  /* Belle Theme Colors - New Brand (Chef Shahad) */
+  --color-primary: #601919;
+  /* Deep Red/Brown from logo */
+  --color-primary-light: #FFE5D4;
+  /* Light Peach from logo */
+  --color-secondary: #D4A373;
+  /* Warm gold/tan accent */
+  --color-background: #FFFAF8;
+  /* Warm white/very light peach */
   --color-surface: #ffffff;
-  --color-text: #4a4a4a;
-  --color-text-light: #888888;
+  --color-text: #4a2c2c;
+  /* Dark brown text */
+  --color-text-light: #8c7b7b;
 
   /* Fonts */
   --font-heading: 'Amiri', serif;
@@ -27,21 +29,20 @@
 }
 
 [data-theme="dark"] {
-  /* Belle Theme Colors - Dark (Dark Chocolate & Berry) */
-  --color-primary: #ff85a9;
-  /* Lighter Pink for contrast */
-  --color-primary-light: #4a2c36;
-  /* Darker Pink/Brown background for elements */
-  --color-secondary: #ebd27b;
-  /* Lighter Gold */
-  --color-background: #1a0f12;
-  /* Deep Dark Chocolate */
-  --color-surface: #2c1a1f;
-  /* Slightly lighter chocolate */
-  --color-text: #f5f0f1;
-  /* Creamy White */
-  --color-text-light: #c2b0b4;
-  /* Muted Rose/Grey */
+  /* Belle Theme Colors - Dark (Mocha & Cream) */
+  --color-primary: #FFE5D4;
+  /* Light Peach text in dark mode */
+  --color-primary-light: #4A1C1C;
+  /* Dark Red/Brown background elements */
+  --color-secondary: #D4A373;
+  /* Gold */
+  --color-background: #260e0e;
+  /* Deep dark coffee */
+  --color-surface: #3b1818;
+  /* Lighter coffee surface */
+  --color-text: #f5e6e6;
+  /* Warm white text */
+  --color-text-light: #d1baba;
 }
 
 /* Smooth transition for theme change */
