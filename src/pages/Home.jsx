@@ -6,8 +6,9 @@ import './Home.css';
 import logo from '../assets/logo.png';
 
 const Home = () => {
-    // Show only first 2 or 4 products as featured
-    const featuredProducts = products.slice(0, 4);
+    // Show Featured: Honey Cake(1), Lemon Cake(5), Lotus Cheesecake(3)
+    const featuredIds = [1, 5, 3];
+    const featuredProducts = products.filter(p => featuredIds.includes(p.id));
 
     return (
         <div className="home-page">
@@ -25,7 +26,7 @@ const Home = () => {
             </header>
 
             <section className="featured-section container">
-                <h2 className="section-title">منتجاتنا المميزة</h2>
+                <h2 className="section-title">الاصناف المميزه</h2>
                 <div className="products-grid">
                     {featuredProducts.map(product => (
                         <ProductCard key={product.id} product={product} />
