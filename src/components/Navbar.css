@@ -81,8 +81,10 @@
 }
 
 .theme-toggle.dark {
-    background-color: #2c1a1f;
-    border-color: #ebd27b;
+    background-color: #4A1C1C;
+    /* Dark Coffee */
+    border-color: #D4A373;
+    /* Gold Accent */
 }
 
 .toggle-circle {
@@ -103,7 +105,8 @@
 
 .theme-toggle.dark .toggle-circle {
     transform: translateX(24px);
-    background-color: #3d2b2e;
+    background-color: #5e3b3b;
+    /* Darker knob for contrast */
 }
 
 .menu-icon {
